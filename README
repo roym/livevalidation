@@ -8,7 +8,7 @@ This plugin generates the needed Javascript code to run client-side the validati
 
 1. Install the plugin:
 
-    $ script/plugin install git://github.com/porras/livevalidation.git
+    $ script/plugin install git://github.com/roym/livevalidation.git
 
 2. Install Javascript and CSS files under public/, with this Rake task:
 
@@ -16,8 +16,8 @@ This plugin generates the needed Javascript code to run client-side the validati
 
    Remember including them in your headers, including Prototype too (as LiveValidation depends on it), this way (for example):
 
-    <%= javascript_include_tag 'prototype', 'live_validation' %>
-    <%= stylesheet_link_tag 'live_validation' %>
+    <%= javascript_include_tag 'prototype', '/live_validation/live_validation' %>
+    <%= stylesheet_link_tag '/live_validation/live_validation' %>
 
 3. There is no step 3 ;) You only need to add validations to your models, and crete your forms using the Rails form helpers, something like this:
 

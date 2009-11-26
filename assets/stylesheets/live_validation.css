@@ -1,3 +1,23 @@
+.LV_valid, .LV_invalid {
+  background: transparent url(/livevalidation/controls.png) no-repeat;
+  padding: 0px 0px 3px 23px;
+}
+
+.text_field, .text_area {
+  background: transparent url(/livevalidation/text_field.png) repeat-x;
+  border: solid 1px #666;
+  color: #000;
+  font-family:tahoma,arial,sans-serif;
+  font-size:11px;
+  margin-right:3px;
+  padding:3px 5px 4px;
+  width:220px;
+}
+
+.text_area { 
+  height: 120px;
+}
+
 .LV_validation_message{
     font-weight:bold;
     margin:0 0 0 5px;
@@ -9,6 +29,7 @@
 	
 .LV_invalid {
     color:#CC0000;
+    background-position: 0px -22px;
 }
     
 .LV_valid_field,
@@ -16,7 +37,8 @@ input.LV_valid_field:hover,
 input.LV_valid_field:active,
 textarea.LV_valid_field:hover, 
 textarea.LV_valid_field:active {
-    border: 1px solid #00CC00;
+  background-image: url(/livevalidation/text_field_valid.png);
+  border: 1px solid #00CC00;
 }
     
 .LV_invalid_field, 
@@ -24,5 +46,6 @@ input.LV_invalid_field:hover,
 input.LV_invalid_field:active,
 textarea.LV_invalid_field:hover, 
 textarea.LV_invalid_field:active {
-    border: 1px solid #CC0000;
+  background-image: url(/livevalidation/text_field_invalid.png);
+  border: 1px solid #CC0000;
 }
