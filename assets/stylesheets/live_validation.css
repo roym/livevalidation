@@ -25,11 +25,13 @@
 
 .LV_valid {
     color:#00CC00;
+    background: transparent url(/livevalidation/accept.png) no-repeat 0 50%;
 }
 	
 .LV_invalid {
     color:#CC0000;
-    background-position: 0px -22px;
+    /* background-position: 0px -22px; */
+    background: transparent url(/livevalidation/delete.png) no-repeat 0 50%;
 }
     
 .LV_valid_field,
